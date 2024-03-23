@@ -1,5 +1,8 @@
 import Image from "next/image";
 import HomeImage from "../images/home1.webp";
+import HomeImage2 from "../images/home2.webp";
+import HomeImage3 from "../images/home3.webp";
+import HomeImage4 from "../images/home4.webp";
 import HomeImageMobile from "../images/home1mobile.webp";
 import {
   Carousel,
@@ -16,7 +19,7 @@ function FirstCatalog() {
         <Image
           width={1920}
           height={1080}
-          src={HomeImage}
+          src={HomeImage2}
           alt="HomeImage"
           className="absolute inset-0 h-full w-full object-cover object-center lg:block hidden"
         />
@@ -77,7 +80,7 @@ function Catalog() {
         <Image
           width={960}
           height={1080}
-          src={HomeImageMobile}
+          src={HomeImage3}
           alt="Catalog"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
@@ -94,7 +97,7 @@ function Catalog() {
         <Image
           width={960}
           height={1080}
-          src={HomeImageMobile}
+          src={HomeImage4}
           alt="Catalog"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />

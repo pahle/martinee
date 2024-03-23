@@ -43,6 +43,10 @@ export const metadata = {
     default:
       "Martinee Studio",
   },
+  description: {
+    default:
+      "Martinee Studio Clothing Store is a place where you can find the best clothes for you. We have a wide range of clothes for your needs.",
+  },
 };
 
 function Header() {

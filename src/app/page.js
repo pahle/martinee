@@ -119,20 +119,6 @@ export default function Home() {
   return (
     <>
       <FirstCatalog />
-      {/* <Image
-        width={1920}
-        height={1080}
-        src={HomeImage}
-        alt="HomeImage"
-        className="object-cover w-full h-full lg:block hidden"
-      />
-      <Image
-        width={375}
-        height={667}
-        src={HomeImageMobile}
-        alt="HomeImage"
-        className="object-cover w-full h-full lg:hidden block "
-      /> */}
       <CarouselSize />
       <Catalog />
     </>

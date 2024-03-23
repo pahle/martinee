@@ -28,17 +28,11 @@ function FirstCatalog() {
           className="absolute inset-0 h-full w-full object-cover object-center lg:hidden block "
         />
         <div className="relative flex w-full flex-col items-center justify-end p-8 mb-12 sm:p-12">
-          <h2 className="text-lg font-medium text-white text-opacity-75">
-            Self-Improvement
-          </h2>
-          <p className="mt-1 text-2xl font-medium text-white">
-            Journals and note-taking
-          </p>
           <a
             href="#"
-            className="mt-4 rounded-md bg-white px-4 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-50"
+            className="mt-4 rounded-md bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
           >
-            Shop now
+            SHOP HUMANRACE
           </a>
         </div>
       </div>
@@ -88,17 +82,11 @@ function Catalog() {
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="relative flex w-full flex-col items-center justify-end p-8 mb-12 sm:p-12">
-          <h2 className="text-lg font-medium text-white text-opacity-75">
-            Self-Improvement
-          </h2>
-          <p className="mt-1 text-2xl font-medium text-white">
-            Journals and note-taking
-          </p>
           <a
             href="#"
-            className="mt-4 rounded-md bg-white px-4 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-50"
+            className="mt-4 rounded-md bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
           >
-            Shop now
+            SHOP HUMANRACE
           </a>
         </div>
       </div>
@@ -111,17 +99,11 @@ function Catalog() {
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="relative flex w-full flex-col items-center justify-end p-8 mb-12 sm:p-12">
-          <h2 className="text-lg font-medium text-white text-opacity-75">
-            Self-Improvement
-          </h2>
-          <p className="mt-1 text-2xl font-medium text-white">
-            Journals and note-taking
-          </p>
           <a
             href="#"
-            className="mt-4 rounded-md bg-white px-4 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-50"
+            className="mt-4 rounded-md bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
           >
-            Shop now
+            SHOP HUMANRACE
           </a>
         </div>
       </div>

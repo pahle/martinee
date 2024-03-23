@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        '-lg': {'max': '1279'},
+      },
       colors: {
         primary: "#A5D8E8",
         secondary: "#FEFAEE",

@@ -1,5 +1,17 @@
 import localFont from "next/font/local";
 
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+
 import "@/styles/tailwind.css";
 
 const futura = localFont({
@@ -40,8 +52,7 @@ const futura = localFont({
 export const metadata = {
   title: {
     template: "%s - Martinee Studio",
-    default:
-      "Martinee Studio",
+    default: "Martinee Studio",
   },
   description: {
     default:
@@ -49,13 +60,42 @@ export const metadata = {
   },
 };
 
+export function MenuDrawer({ className }) {
+  return (
+    <div className={className}>
+      <Sheet>
+        <SheetTrigger asChild>
+          <button className="text-xl font-bold">
+            MENU
+          </button>
+        </SheetTrigger>
+        <SheetContent
+          className="md:max-w-none md:w-1/2 max-w-sm w-3/4"
+        >
+          <SheetHeader>
+            <SheetTitle>Edit profile</SheetTitle>
+            <SheetDescription>
+              Make changes to your profile here. Click save
+              when youre done.
+            </SheetDescription>
+          </SheetHeader>
+          <div className="grid gap-4 py-4"></div>
+          <SheetFooter>
+            <SheetClose asChild>
+              <Button type="submit">Save changes</Button>
+            </SheetClose>
+          </SheetFooter>
+        </SheetContent>
+      </Sheet>
+    </div>
+  );
+}
+
 function Header() {
   return (
     <header className="px-6 lg:py-0 py-2 fixed top-0 w-full z-10 bg-secondary lg:h-20 h-[51px]">
       <div className="flex flex-row lg:justify-between justify-center items-center lg:[&>*]:leading-[4.5rem]">
-        <h1 className="text-xl font-bold lg:block hidden">
-          MENU
-        </h1>
+        <MenuDrawer className="lg:block hidden" />
         <h1 className="lg:text-6xl text-[2.8rem] py-1.5 font-extrabold tracking-[-0.20rem]">
           MARTINEE*
         </h1>
@@ -71,9 +111,7 @@ function Footer() {
   return (
     <footer className="px-6 lg:py-0 py-2 fixed bottom-0 w-full z-10 bg-secondary lg:h-20 h-[51px]">
       <div className="flex flex-row lg:justify-center justify-between items-center [&>*]:lg:leading-[4.5rem]">
-        <h1 className="text-xl font-bold lg:hidden block">
-          MENU
-        </h1>
+        <MenuDrawer className="lg:hidden block" />
         <h1 className="lg:text-6xl text-[2.8rem] py-1.5 font-extrabold tracking-[-0.20rem]">
           DOG
         </h1>

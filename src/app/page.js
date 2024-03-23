@@ -3,6 +3,7 @@ import HomeImage from "../images/home1.webp";
 import HomeImage2 from "../images/home2.webp";
 import HomeImage3 from "../images/home3.webp";
 import HomeImage4 from "../images/home4.webp";
+import HomeImage5 from "../images/home5.webp";
 import HomeImageMobile from "../images/home1mobile.webp";
 import {
   Carousel,
@@ -35,7 +36,7 @@ function FirstCatalog() {
             href="#"
             className="mt-4 rounded-md bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
           >
-            SHOP HUMANRACE
+            SHOP MARTINEE
           </a>
         </div>
       </div>
@@ -60,7 +61,7 @@ function CarouselSize() {
             <Image
               width={1080}
               height={1080}
-              src={HomeImageMobile}
+              src={HomeImage5}
               alt="HomeImage"
               className="object-cover w-full h-screen"
             />
@@ -89,7 +90,7 @@ function Catalog() {
             href="#"
             className="mt-4 rounded-md bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
           >
-            SHOP HUMANRACE
+            SHOP MARTINEE
           </a>
         </div>
       </div>
@@ -106,7 +107,7 @@ function Catalog() {
             href="#"
             className="mt-4 rounded-md bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
           >
-            SHOP HUMANRACE
+            SHOP MARTINEE
           </a>
         </div>
       </div>

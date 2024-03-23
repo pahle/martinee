@@ -53,7 +53,7 @@ function Header() {
           MENU
         </h1>
         <h1 className="lg:text-6xl text-[2.8rem] py-1.5 font-extrabold tracking-[-0.20rem]">
-          le FLEUR*
+          MARTINEE*
         </h1>
         <h1 className="text-xl font-bold lg:block hidden">
           CART(0)

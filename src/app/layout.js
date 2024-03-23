@@ -39,9 +39,9 @@ const futura = localFont({
 
 export const metadata = {
   title: {
-    template: "%s - Prospera",
+    template: "%s - Martinee Studio",
     default:
-      "Prospera - Solusi Laboratorium Berkualitas Tinggi",
+      "Martinee Studio",
   },
 };
 

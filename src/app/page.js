@@ -27,7 +27,7 @@ function FirstCatalog() {
         <Image
           width={375}
           height={667}
-          src={HomeImageMobile}
+          src={HomeImage5}
           alt="HomeImage"
           className="absolute inset-0 h-full w-full object-cover object-center lg:hidden block "
         />

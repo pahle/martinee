@@ -1,7 +1,6 @@
 import Image from "next/image";
 import HomeImage from "../images/home1.webp";
 import HomeImageMobile from "../images/home1mobile.webp";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,

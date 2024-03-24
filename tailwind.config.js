@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       screens: {
-        '-lg': {'max': '1279'},
+        '-lg': {'max': '1279px'},
       },
       colors: {
         primary: "#A5D8E8",

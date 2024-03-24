@@ -20,14 +20,14 @@ function FirstCatalog() {
         <Image
           width={1920}
           height={1080}
-          src={HomeImage2}
+          src='/catalog9.webp'
           alt="HomeImage"
           className="absolute inset-0 h-full w-full object-cover object-center lg:block hidden"
         />
         <Image
           width={375}
           height={667}
-          src={HomeImage5}
+          src='/catalog7.webp'
           alt="HomeImage"
           className="absolute inset-0 h-full w-full object-cover object-center lg:hidden block "
         />
@@ -53,7 +53,7 @@ function CarouselSize() {
       className="w-full h-screen"
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
+        {Array.from({ length: 4 }).map((_, index) => (
           <CarouselItem
             key={index}
             className="md:basis-1/2 lg:basis-1/3"
@@ -61,7 +61,7 @@ function CarouselSize() {
             <Image
               width={1080}
               height={1080}
-              src={HomeImage5}
+              src={`/catalog${index + 1}.webp`}
               alt="HomeImage"
               className="object-cover w-full h-screen"
             />
@@ -81,7 +81,7 @@ function Catalog() {
         <Image
           width={960}
           height={1080}
-          src={HomeImage3}
+          src='/catalog8.webp'
           alt="Catalog"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
@@ -98,7 +98,7 @@ function Catalog() {
         <Image
           width={960}
           height={1080}
-          src={HomeImage4}
+          src='/catalog6.webp'
           alt="Catalog"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />

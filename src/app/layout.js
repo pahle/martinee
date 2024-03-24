@@ -65,7 +65,7 @@ export function MenuDrawer({ className }) {
     <div className={className}>
       <Sheet>
         <SheetTrigger asChild>
-          <button className="text-xl font-bold lg:block hidden">
+          <button className="text-xl font-bold">
             MENU
           </button>
         </SheetTrigger>

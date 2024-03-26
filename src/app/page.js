@@ -20,21 +20,21 @@ function FirstCatalog() {
         <Image
           width={1920}
           height={1080}
-          src='/catalog9.webp'
+          src="/catalog9.webp"
           alt="HomeImage"
           className="absolute inset-0 h-full w-full object-cover object-center lg:block hidden"
         />
         <Image
           width={375}
           height={667}
-          src='/catalog7.webp'
+          src="/catalog7.webp"
           alt="HomeImage"
           className="absolute inset-0 h-full w-full object-cover object-center lg:hidden block "
         />
         <div className="relative flex w-full flex-col items-center justify-end p-8 mb-12 sm:p-12">
           <a
             href="#"
-            className="mt-4 rounded-md bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
+            className="mt-4 bg-primary px-4 py-2.5 rounded-full text-sm hover:bg-gray-50 font-semibold transition-colors"
           >
             SHOP MARTINEE
           </a>
@@ -81,14 +81,14 @@ function Catalog() {
         <Image
           width={960}
           height={1080}
-          src='/catalog8.webp'
+          src="/catalog8.webp"
           alt="Catalog"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="relative flex w-full flex-col items-center justify-end p-8 mb-12 sm:p-12">
           <a
             href="#"
-            className="mt-4 rounded-md bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
+            className="mt-4 rounded-full bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
           >
             SHOP MARTINEE
           </a>
@@ -98,14 +98,14 @@ function Catalog() {
         <Image
           width={960}
           height={1080}
-          src='/catalog6.webp'
+          src="/catalog6.webp"
           alt="Catalog"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="relative flex w-full flex-col items-center justify-end p-8 mb-12 sm:p-12">
           <a
             href="#"
-            className="mt-4 rounded-md bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
+            className="mt-4 rounded-full bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
           >
             SHOP MARTINEE
           </a>

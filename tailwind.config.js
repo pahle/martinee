@@ -21,7 +21,7 @@ module.exports = {
         '-lg': {'max': '1279px'},
       },
       colors: {
-        primary: "#A5D8E8",
+        primary: "#96daea",
         secondary: "#FEFAEE",
       },
       keyframes: {

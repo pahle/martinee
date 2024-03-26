@@ -1,20 +1,6 @@
-"use client";
-
-import { useState } from "react";
-
+import Link from "next/link";
+import { MenuDrawer } from "@/components/MenuDrawer";
 import localFont from "next/font/local";
-
-import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
 
 import "@/styles/tailwind.css";
 
@@ -53,60 +39,28 @@ const futura = localFont({
   ],
 });
 
-// export const metadata = {
-//   title: {
-//     template: "%s - Martinee Studio",
-//     default: "Martinee Studio",
-//   },
-//   description: {
-//     default:
-//       "Martinee Studio Clothing Store is a place where you can find the best clothes for you. We have a wide range of clothes for your needs.",
-//   },
-// };
-
-export function MenuDrawer({ className }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className={className}>
-      <Sheet open={open} onOpenChange={setOpen}>
-        {open ? (
-          <button
-            className="text-xl font-bold"
-            onClick={() => setOpen(false)}
-          >
-            CLOSE
-          </button>
-        ) : (
-          <SheetTrigger asChild>
-            <button className="text-xl font-bold">
-              MENU
-            </button>
-          </SheetTrigger>
-        )}
-        <SheetContent className="md:max-w-none md:w-1/2 max-w-sm w-3/4">
-          <div className="flex justify-between w-full gap-4 py-4">
-            <div>a</div>
-            <div>b</div>
-          </div>
-          <SheetFooter>
-            <SheetClose asChild>
-              <Button type="submit">Save changes</Button>
-            </SheetClose>
-          </SheetFooter>
-        </SheetContent>
-      </Sheet>
-    </div>
-  );
-}
+export const metadata = {
+  title: {
+    template: "%s - Martinee Studio",
+    default: "Martinee Studio",
+  },
+  description: {
+    default:
+      "Martinee Studio Clothing Store is a place where you can find the best clothes for you. We have a wide range of clothes for your needs.",
+  },
+};
 
 function Header() {
   return (
     <header className="a px-6 lg:py-0 py-2 fixed top-0 w-full z-30 bg-secondary lg:h-20 h-[51px]">
       <div className="flex flex-row lg:justify-between justify-center items-center lg:[&>*]:leading-[4.5rem]">
         <MenuDrawer className="lg:block hidden" />
-        <h1 className="lg:text-6xl text-[2.8rem] py-1.5 font-extrabold tracking-[-0.20rem]">
+        <Link
+          href="/"
+          className="lg:text-6xl text-[2.8rem] py-1.5 font-extrabold tracking-[-0.20rem]"
+        >
           MARTINEE*
-        </h1>
+        </Link>
         <h1 className="text-xl font-bold lg:block hidden">
           CART(0)
         </h1>

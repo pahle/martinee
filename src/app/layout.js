@@ -52,7 +52,7 @@ export const metadata = {
 
 function Header() {
   return (
-    <header className="a px-6 lg:py-0 py-2 fixed top-0 w-full z-30 bg-secondary lg:h-20 h-[51px]">
+    <header className="px-6 lg:py-0 py-2 fixed top-0 w-full z-30 bg-secondary lg:h-20 h-[51px]">
       <div className="flex flex-row lg:justify-between justify-center items-center lg:[&>*]:leading-[4.5rem]">
         <MenuDrawer className="lg:block hidden" />
         <Link

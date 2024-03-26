@@ -1,0 +1,71 @@
+[
+  {
+    "category": "clothes",
+    "catalog": [
+      {
+        "slug": "uniqlo",
+        "name": "Uniqlo",
+        "image": "/catalog.webp",
+        "price": 100
+      },
+      {
+        "slug": "zara",
+        "name": "Zara",
+        "image": "/catalog.webp",
+        "price": 100
+      },
+      {
+        "slug": "hnm",
+        "name": "H&M",
+        "image": "/catalog.webp",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "category": "pants",
+    "catalog": [
+      {
+        "slug": "edwin",
+        "name": "Edwin",
+        "image": "/catalog.webp",
+        "price": 100
+      },
+      {
+        "slug": "sage",
+        "name": "Sage",
+        "image": "/catalog.webp",
+        "price": 100
+      },
+      {
+        "slug": "crocodile",
+        "name": "Sage",
+        "image": "/catalog.webp",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "category": "shoes",
+    "catalog": [
+      {
+        "slug": "nike",
+        "name": "Nike",
+        "image": "/catalog.webp",
+        "price": 100
+      },
+      {
+        "slug": "adidas",
+        "name": "Adidas",
+        "image": "/catalog.webp",
+        "price": 100
+      },
+      {
+        "slug": "puma",
+        "name": "Puma",
+        "image": "/catalog.webp",
+        "price": 100
+      }
+    ]
+  }
+]

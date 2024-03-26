@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 import localFont from "next/font/local";
 
 import { Button } from "@/components/ui/button";
@@ -49,37 +53,41 @@ const futura = localFont({
   ],
 });
 
-export const metadata = {
-  title: {
-    template: "%s - Martinee Studio",
-    default: "Martinee Studio",
-  },
-  description: {
-    default:
-      "Martinee Studio Clothing Store is a place where you can find the best clothes for you. We have a wide range of clothes for your needs.",
-  },
-};
+// export const metadata = {
+//   title: {
+//     template: "%s - Martinee Studio",
+//     default: "Martinee Studio",
+//   },
+//   description: {
+//     default:
+//       "Martinee Studio Clothing Store is a place where you can find the best clothes for you. We have a wide range of clothes for your needs.",
+//   },
+// };
 
 export function MenuDrawer({ className }) {
+  const [open, setOpen] = useState(false);
   return (
     <div className={className}>
-      <Sheet>
-        <SheetTrigger asChild>
-          <button className="text-xl font-bold">
-            MENU
+      <Sheet open={open} onOpenChange={setOpen}>
+        {open ? (
+          <button
+            className="text-xl font-bold"
+            onClick={() => setOpen(false)}
+          >
+            CLOSE
           </button>
-        </SheetTrigger>
-        <SheetContent
-          className="md:max-w-none md:w-1/2 max-w-sm w-3/4"
-        >
-          <SheetHeader>
-            <SheetTitle>Edit profile</SheetTitle>
-            <SheetDescription>
-              Make changes to your profile here. Click save
-              when youre done.
-            </SheetDescription>
-          </SheetHeader>
-          <div className="grid gap-4 py-4"></div>
+        ) : (
+          <SheetTrigger asChild>
+            <button className="text-xl font-bold">
+              MENU
+            </button>
+          </SheetTrigger>
+        )}
+        <SheetContent className="md:max-w-none md:w-1/2 max-w-sm w-3/4">
+          <div className="flex justify-between w-full gap-4 py-4">
+            <div>a</div>
+            <div>b</div>
+          </div>
           <SheetFooter>
             <SheetClose asChild>
               <Button type="submit">Save changes</Button>
@@ -93,7 +101,7 @@ export function MenuDrawer({ className }) {
 
 function Header() {
   return (
-    <header className="px-6 lg:py-0 py-2 fixed top-0 w-full z-10 bg-secondary lg:h-20 h-[51px]">
+    <header className="a px-6 lg:py-0 py-2 fixed top-0 w-full z-30 bg-secondary lg:h-20 h-[51px]">
       <div className="flex flex-row lg:justify-between justify-center items-center lg:[&>*]:leading-[4.5rem]">
         <MenuDrawer className="lg:block hidden" />
         <h1 className="lg:text-6xl text-[2.8rem] py-1.5 font-extrabold tracking-[-0.20rem]">
@@ -109,7 +117,7 @@ function Header() {
 
 function Footer() {
   return (
-    <footer className="px-6 lg:py-0 py-2 fixed bottom-0 w-full z-10 bg-secondary lg:h-20 h-[51px]">
+    <footer className="px-6 lg:py-0 py-2 fixed bottom-0 w-full z-30 bg-secondary lg:h-20 h-[51px]">
       <div className="flex flex-row lg:justify-center justify-between items-center [&>*]:lg:leading-[4.5rem]">
         <MenuDrawer className="lg:hidden block" />
         <h1 className="lg:text-6xl text-[2.8rem] py-1.5 font-extrabold tracking-[-0.20rem]">

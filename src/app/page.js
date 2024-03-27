@@ -1,10 +1,4 @@
 import Image from "next/image";
-import HomeImage from "../images/home1.webp";
-import HomeImage2 from "../images/home2.webp";
-import HomeImage3 from "../images/home3.webp";
-import HomeImage4 from "../images/home4.webp";
-import HomeImage5 from "../images/home5.webp";
-import HomeImageMobile from "../images/home1mobile.webp";
 import {
   Carousel,
   CarouselContent,

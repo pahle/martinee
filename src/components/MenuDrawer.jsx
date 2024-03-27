@@ -40,15 +40,15 @@ export function MenuDrawer({ className }) {
                 <div>
                   <div className="font-semibold text-sm flex flex-col gap-2 ">
                     <Link href="/catalog">ALL</Link>
-                    <Link href="/catalog">SEASON 2</Link>
-                    <Link href="/catalog">LACOSTE</Link>
+                    <Link href="/catalog/batch-1">BATCH 1</Link>
+                    {/* <Link href="/catalog">LACOSTE</Link>
                     <Link href="/catalog">TOPS</Link>
                     <Link href="/catalog">BOTTOM</Link>
                     <Link href="/catalog">FRAGRANCE</Link>
                     <Link href="/catalog">NAIL POLISH</Link>
                     <Link href="/catalog">ACCESSORIES</Link>
                     <Link href="/catalog">LUGGAGE</Link>
-                    <Link href="/catalog">FOOTWEAR</Link>
+                    <Link href="/catalog">FOOTWEAR</Link> */}
                   </div>
                 </div>
                 <div>

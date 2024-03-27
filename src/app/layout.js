@@ -78,7 +78,7 @@ function Footer() {
           DOG
         </h1>
         <h1 className="text-xl font-bold lg:hidden block">
-          CART(0)
+          CART (0)
         </h1>
       </div>
     </footer>

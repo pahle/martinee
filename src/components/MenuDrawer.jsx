@@ -35,19 +35,19 @@ export function MenuDrawer({ className }) {
           </SheetTrigger>
         )}
         <div>
-          <SheetContent className="md:max-w-none md:w-1/2 max-w-sm w-3/4 flex flex-col gap-72">
+          <SheetContent className="md:max-w-none md:w-1/2 max-w-sm w-3/4 flex flex-col lg:gap-72 gap-40">
             <div className="flex justify-between w-full mt-8">
               <div>
                 <div className="font-semibold text-sm flex flex-col gap-2 ">
                   <Link
                     href="/catalog"
-                    onClick={closeDrawer}
+                    onClick={() => setOpen(false)}
                   >
                     ALL
                   </Link>
                   <Link
                     href="/catalog/batch-1"
-                    onClick={closeDrawer}
+                    onClick={() => setOpen(false)}
                   >
                     BATCH 1
                   </Link>

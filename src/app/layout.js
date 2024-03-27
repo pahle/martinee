@@ -44,10 +44,8 @@ export const metadata = {
     template: "%s - Martinee Studio",
     default: "Martinee Studio",
   },
-  description: {
-    default:
-      "Martinee Studio Clothing Store is a place where you can find the best clothes for you. We have a wide range of clothes for your needs.",
-  },
+  description:
+    "Martinee Studio Clothing Store is a place where you can find the best clothes for you. We have a wide range of clothes for your needs.",
 };
 
 function Header() {

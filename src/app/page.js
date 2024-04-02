@@ -6,6 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Link } from "lucide-react";
 
 function FirstCatalog() {
   return (
@@ -27,7 +28,8 @@ function FirstCatalog() {
         />
         <div className="relative flex w-full flex-col items-center justify-end p-8 mb-12 sm:p-12">
           <a
-            href="#"
+            href="https://shp.ee/ygobijj"
+            target="_blank"
             className="mt-4 bg-primary px-4 py-2.5 rounded-full text-sm hover:bg-gray-50 font-semibold transition-colors"
           >
             SHOP MARTINEE
@@ -44,7 +46,7 @@ function CarouselSize() {
       opts={{
         align: "center",
       }}
-      className="w-full h-screen"
+      className="w-full h-dvh"
     >
       <CarouselContent>
         {Array.from({ length: 4 }).map((_, index) => (
@@ -57,7 +59,7 @@ function CarouselSize() {
               height={1080}
               src={`/catalog${index + 1}.webp`}
               alt="HomeImage"
-              className="object-cover w-full h-screen"
+              className="object-cover w-full h-dvh"
             />
           </CarouselItem>
         ))}
@@ -81,7 +83,8 @@ function Catalog() {
         />
         <div className="relative flex w-full flex-col items-center justify-end p-8 mb-12 sm:p-12">
           <a
-            href="#"
+            href="https://shp.ee/ygobijj"
+            target="_blank"
             className="mt-4 rounded-full bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
           >
             SHOP MARTINEE
@@ -98,7 +101,8 @@ function Catalog() {
         />
         <div className="relative flex w-full flex-col items-center justify-end p-8 mb-12 sm:p-12">
           <a
-            href="#"
+            href="https://shp.ee/ygobijj"
+            target="_blank"
             className="mt-4 rounded-full bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
           >
             SHOP MARTINEE

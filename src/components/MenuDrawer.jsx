@@ -63,13 +63,12 @@ export function MenuDrawer({ className }) {
               </div>
               <div>
                 <div className="text-sm flex flex-col gap-2 text-end [&>*]:cursor-pointer">
-                  <Link href="/catalog">catalog</Link>
-                  <Link href="/catalog">broadcast</Link>
-                  <Link href="/catalog">instagram</Link>
-                  <Link href="/catalog">store</Link>
-                  <Link href="/catalog">privacy</Link>
-                  <Link href="/catalog">accessibiaty</Link>
-                  <Link href="/catalog">terms</Link>
+                  <Link href="https://shp.ee/ygobijj" target="_blank">
+                    shopee
+                  </Link>
+                  <Link href="https://www.instagram.com/martineestudio" target="_blank">
+                    instagram
+                  </Link>
                 </div>
               </div>
             </div>

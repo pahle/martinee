@@ -57,7 +57,7 @@ function Header() {
           href="/"
           className="lg:text-6xl text-[2.8rem] py-1.5 font-extrabold tracking-[-0.20rem]"
         >
-          MARTINEE*
+          MARTINEE
         </Link>
         <h1 className="text-xl font-bold lg:block hidden">
           CART(0)
@@ -72,9 +72,6 @@ function Footer() {
     <footer className="px-6 lg:py-0 py-2 fixed bottom-0 w-full z-30 bg-secondary lg:h-20 h-[51px]">
       <div className="flex flex-row lg:justify-center justify-between items-center [&>*]:lg:leading-[4.5rem]">
         <MenuDrawer className="lg:hidden block" />
-        <h1 className="lg:text-6xl text-[2.8rem] py-1.5 font-extrabold tracking-[-0.20rem]">
-          DOG
-        </h1>
         <h1 className="text-xl font-bold lg:hidden block">
           CART (0)
         </h1>
@@ -85,9 +82,9 @@ function Footer() {
 
 function RootLayout({ children }) {
   return (
-    <div className="flex flex-col min-h-full">
+    <div className="flex flex-col min-h-dvh">
       <Header />
-      <main className="h-screen">{children}</main>
+      <main className="h-dvh">{children}</main>
       <Footer />
     </div>
   );

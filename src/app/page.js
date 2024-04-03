@@ -6,7 +6,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Link } from "lucide-react";
 
 function FirstCatalog() {
   return (
@@ -17,20 +16,20 @@ function FirstCatalog() {
           height={1080}
           src="/catalog9.webp"
           alt="HomeImage"
-          className="absolute inset-0 h-full w-full object-cover object-center lg:block hidden"
+          className="absolute inset-0 hidden h-full w-full object-cover object-center lg:block"
         />
         <Image
           width={375}
           height={667}
           src="/catalog7.webp"
           alt="HomeImage"
-          className="absolute inset-0 h-full w-full object-cover object-center lg:hidden block "
+          className="absolute inset-0 block h-full w-full object-cover object-center lg:hidden "
         />
-        <div className="relative flex w-full flex-col items-center justify-end p-8 mb-12 sm:p-12">
+        <div className="relative mb-12 flex w-full flex-col items-center justify-end p-8 sm:p-12">
           <a
             href="https://shp.ee/ygobijj"
             target="_blank"
-            className="mt-4 bg-primary px-4 py-2.5 rounded-full text-sm hover:bg-gray-50 font-semibold transition-colors"
+            className="mt-4 rounded-full bg-primary px-4 py-2.5 text-sm font-semibold transition-colors hover:bg-gray-50"
           >
             SHOP MARTINEE
           </a>
@@ -46,20 +45,17 @@ function CarouselSize() {
       opts={{
         align: "center",
       }}
-      className="w-full h-dvh"
+      className="h-dvh w-full"
     >
       <CarouselContent>
         {Array.from({ length: 4 }).map((_, index) => (
-          <CarouselItem
-            key={index}
-            className="md:basis-1/2 lg:basis-1/3"
-          >
+          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
             <Image
               width={1080}
               height={1080}
               src={`/catalog${index + 1}.webp`}
               alt="HomeImage"
-              className="object-cover w-full h-dvh"
+              className="h-dvh w-full object-cover"
             />
           </CarouselItem>
         ))}
@@ -81,17 +77,17 @@ function Catalog() {
           alt="Catalog"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
-        <div className="relative flex w-full flex-col items-center justify-end p-8 mb-12 sm:p-12">
+        <div className="relative mb-12 flex w-full flex-col items-center justify-end p-8 sm:p-12">
           <a
             href="https://shp.ee/ygobijj"
             target="_blank"
-            className="mt-4 rounded-full bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
+            className="mt-4 rounded-full bg-primary px-4 py-2.5 text-sm font-semibold transition-colors hover:bg-gray-50"
           >
             SHOP MARTINEE
           </a>
         </div>
       </div>
-      <div className="relative lg:flex hidden">
+      <div className="relative hidden lg:flex">
         <Image
           width={960}
           height={1080}
@@ -99,11 +95,11 @@ function Catalog() {
           alt="Catalog"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
-        <div className="relative flex w-full flex-col items-center justify-end p-8 mb-12 sm:p-12">
+        <div className="relative mb-12 flex w-full flex-col items-center justify-end p-8 sm:p-12">
           <a
             href="https://shp.ee/ygobijj"
             target="_blank"
-            className="mt-4 rounded-full bg-primary px-4 py-2.5 text-sm hover:bg-gray-50 font-semibold transition-colors"
+            className="mt-4 rounded-full bg-primary px-4 py-2.5 text-sm font-semibold transition-colors hover:bg-gray-50"
           >
             SHOP MARTINEE
           </a>

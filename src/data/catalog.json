@@ -6,19 +6,19 @@
         "slug": "heaven-can-wait",
         "name": "Heaven Can Wait",
         "image": "/clothes1.webp",
-        "price": 100000
+        "price": 130000
       },
       {
         "slug": "hall-of-ex",
         "name": "Hall of Ex",
         "image": "/clothes2.webp",
-        "price": 100000
+        "price": 130000
       },
       {
         "slug": "martinee-containing",
         "name": "Martinee Containing",
         "image": "/clothes3.webp",
-        "price": 100000
+        "price": 130000
       }
     ]
   }

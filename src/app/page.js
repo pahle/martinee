@@ -8,8 +8,9 @@ import {
 } from "@/components/ui/carousel";
 
 function FirstCatalog() {
+
   return (
-    <div className="grid min-h-full">
+    <div className="grid min-h-full
       <div className="relative flex">
         <Image
           width={1920}
